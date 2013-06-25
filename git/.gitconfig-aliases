@@ -10,3 +10,4 @@
 	st = status
 	fr = "!branch=$(git status | awk '{ if (FNR == 1) print $4; exit }'); remote=$(git config --get branch.$branch.remote); echo -e \"Rebasing:\t $branch \nonto the latest: $remote/$branch\"; git fetch --all; git rebase $remote/$branch"
 	ash = stash
+	riom = rebase -i origin/master
